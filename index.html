@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Genarator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="password.png" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="main_section">
+      <div class="header">
+        <h2>Password Genarator</h2>
+      </div>
+      <div class="input_box">
+        <input type="text" class="password_box" id="input_box_pass" />
+      </div>
+      <div class="password_length">
+        <input
+          type="range"
+          name="password_length"
+          class="style_modify_length"
+          id="modify_length"
+          min="4"
+          max="16"
+        />
+        <input type="text" class="password_box" id="modify_box" disabled />
+      </div>
+      <br />
+      <div class="modify_genarate">
+        <div class="modify_text">
+          <p>Uppercase</p>
+          <input
+            type="checkbox"
+            name="uppercase"
+            id="for_uppercase"
+            value="uppercase"
+          />
+        </div>
+        <br />
+        <div class="modify_text">
+          <p>Lowercase</p>
+          <input
+            type="checkbox"
+            name="lowercase"
+            id="for_lowercase"
+            value="lowercase"
+          />
+        </div>
+        <br />
+        <div class="modify_text">
+          <p>Number</p>
+          <input
+            type="checkbox"
+            name="uppercase"
+            id="for_number"
+            value="number"
+          />
+        </div>
+        <br />
+        <div class="modify_text">
+          <p>Special Character</p>
+          <input
+            type="checkbox"
+            name="uppercase"
+            id="for_specialCaracter"
+            value="number"
+          />
+        </div>
+      </div>
+      <br />
+      <div class="genarate">
+        <button class="style_g_pass" id="genarate_password">
+          Genarate Password</button
+        ><br /><br />
+        <button class="style_copy" id="copy_password">Copy</button>
+      </div>
+    </div>
+  </body>
+</html>
